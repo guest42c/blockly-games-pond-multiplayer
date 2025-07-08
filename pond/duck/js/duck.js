@@ -57,7 +57,7 @@ Pond.Duck.ignoreEditorChanges_ = true;
  * Multiplayer default code
  */
 // Pond.Duck.defaultCode = "//player1 \nswim(270, 10); \n//player2 \nswim(90, 10);";
-Pond.Duck.defaultCode = "//player1\nswim(270, 10);\n//player2\nvar pos;\npos = 0;\nwhile (pos <= 360) {\n  if (scan(pos) <= 70) {\n    cannon(pos, scan(pos));\n    swim(pos + 60);\n    pos += -10;\n  }\n  if (getX() >= 90) {\n    swim(180);\n  } else if (getX() <= 10) {\n    swim(0);\n\n  } else if (getY() <= 10) {\n    swim(90);\n  } else if (getY() >= 90) {\n    swim(270);\n  } else if (speed() == 0) {\n    swim(Math.random() * 360);\n  }\n  pos += 5;\n  if (pos > 360) {\n    pos = 0;\n  }\n}";
+Pond.Duck.defaultCode = "//player1\nswim(270, 10);\n//player2\nvar pos;\npos = 0;\nwhile (pos <= 360) {\n  if (scan(pos) <= 70) {\n    cannon(pos, scan(pos));\n    swim(pos + 60);\n    pos += -10;\n  }\n  if (getX() >= 90) {\n    swim(180);\n  } else if (getX() <= 10) {\n    swim(0);\n\n  } else if (getY() <= 10) {\n    swim(90);\n  } else if (getY() >= 90) {\n    swim(270);\n  } else if (speed() == 0) {\n    swim(Math.random() * 360);\n  }\n  pos += 5;\n  if (pos > 360) {\n    pos = 0;\n  }\n}\n";
 
 /**
  * Initialize Ace and the pond.  Called on page load.
